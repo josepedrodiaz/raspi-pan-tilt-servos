@@ -7,7 +7,7 @@ let dutyCycle = 0;
 setInterval(() => {
   led.pwmWrite(dutyCycle);
  
-  dutyCycle += 5;
+  dutyCycle += 1;
   if (dutyCycle > 255) {
     dutyCycle = 0;
   }
