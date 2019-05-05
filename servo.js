@@ -1,12 +1,14 @@
 const Gpio = require('pigpio').Gpio;
  
-const motor = new Gpio(10, {mode: Gpio.OUTPUT});
+const servoH = new Gpio(17, {mode: Gpio.OUTPUT});
+const servoV = new Gpio(27, {mode: Gpio.OUTPUT});
  
 let pulseWidth = 1000;
 let increment = 100;
  
 setInterval(() => {
-  motor.servoWrite(pulseWidth);
+    servoH.servoWrite(pulseWidth);
+    servoV.servoWrite(pulseWidth);
  
   pulseWidth += increment;
   if (pulseWidth >= 2000) {
