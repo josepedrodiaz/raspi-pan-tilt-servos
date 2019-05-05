@@ -1,0 +1,14 @@
+{
+  "name": "raspi-pan-tilt-servos",
+  "version": "1.0.0",
+  "description": "Mover servor de pan & tilt con nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "P. Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "pigpio": "^1.2.2"
+  }
+}
